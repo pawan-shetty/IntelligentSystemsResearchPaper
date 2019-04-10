@@ -11,7 +11,7 @@
 \section{Introduction}
 Neural networks are very complicated systems and require a lot of tuning to work properly on certain tasks such as image classification or text classification. Parameters of the networks are learned by using gradient descent to find a minimum of a loss function that describes the error that the network has on a particular set of training data. The architecture of a network, until recently, has been hand crafted by researchers. 
 
-Various techniques have been used to find neural network architectures automatically. Reinforcement learning has been popular for the task, but is extremely computationally expensive requiring on the order of thousands of GPU hours to find a suitable setup. The two papers examined in this work, DARTS \cite{liu2018darts} and ProxylessNAS \cite{cai2018proxylessnas}, propose techniques to create a continuous loss function that includes a representation of the network architecture so that gradient descent can be used to find an optimal architecture.
+Various techniques have been used to find neural network architectures automatically. Reinforcement learning has been popular for the task, but is extremely computationally expensive requiring on the order of thousands of GPU hours to find a suitable setup. The two papers examined in this work, DARTS \cite{liu2018darts} and ProxylessNAS \cite{cai2018proxylessnas}, propose techniques to create a continuous loss function that includes a representation of the network architecture so that gradient descent can be used to find an optimal architecture in much less time.
 
 \section{ProxylessNAS}
 \subsection{Overview}
