@@ -52,7 +52,7 @@ When searching for architectures on mobile they included various MBConv blocks i
 
 \subsection{Results}
 
-
+The architecture search technique described above was able to achieve state-of-the-art results in a few different categories. On CIFAR-10 it got 2.08\% test error compared to 2.13\% which was achieved by AmoebaNet-B. It is a marginal improvement, but uses only 5.7 million parameters while the other network uses 34.9 million. On ImageNet evaluated on a GPU they also achieve state-of-the-art accuracy, getting 75.1\% while the previous is 72.0\%. When testing ImageNet on a mobile platform they achieve state-of-the-art accuracy when evaluation must be under 80ms getting theirs to run in 78ms and be 74.6\% accurate. Without using their latency regularization, the architecture search finds one with 158ms of latency on the Pixel 1, so it is definitely necessary to explicitly train for it. Their search cost is also much lower than the other methods. It takes 200 GPU hours to search for their architecture while the next best is 40,000 GPU hours. 
 \bibliographystyle{unsrt}
 \bibliography{sources}
  
